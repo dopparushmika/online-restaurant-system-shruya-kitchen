@@ -1,0 +1,7 @@
+<h2>Menu</h2>
+<ul>
+    {% for item, price in menu.items() %}
+    <li>{{ item }} - {{ price }}</li>
+    {% endfor %}
+</ul>
+<a href="/">Back to Home</a>

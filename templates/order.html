@@ -1,0 +1,15 @@
+<h2>Place Your Order</h2>
+<form method="POST">
+  <label><input type="checkbox" name="items[]" value="biryani"> Burger - 100</label><br>
+  <label><input type="checkbox" name="items[]" value="Pizza"> Pizza - 120</label><br>
+  <label><input type="checkbox" name="items[]" value="Pasta"> Pasta - 150</label><br>
+  <label><input type="checkbox" name="items[]" value="mutton curry"> Salad - 200</label><br>
+  <label><input type="checkbox" name="items[]" value="Soda"> Soda - 30</label><br>
+  <input type="submit" value="Submit Order">
+</form>
+
+{% if order_placed %}
+  <p>Thanks for placing order!</p>
+{% endif %}
+
+<a href="/">Back to Home</a>

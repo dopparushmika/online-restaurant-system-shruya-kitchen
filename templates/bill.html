@@ -1,0 +1,9 @@
+<h2>Your Bill</h2>
+<p>Items Ordered:</p>
+<ul>
+    {% for item in order.items %}
+    <li>{{ item }} - ${{ "%.2f" | format(menu[item]) }}</li>
+    {% endfor %}
+</ul>
+<p><strong>Total:</strong> ${{ "%.2f" | format(order.total) }}</p>
+<a href="/">Back to Home</a>
